@@ -1,0 +1,141 @@
+/*｛サイト全体のデザインについて｝*/
+body {
+  font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  background-color: #ffeef0;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  font-size: 18px:
+}
+html {
+  scroll-behavior: smooth;
+}
+/*｛ヘッダーのデザイン細かく｝*/
+header {
+  background-color: #f78da7;   /* 濃いめのピンク */
+  position: fixed;             /* 上に固定する */
+  top: 0;
+  width: 100%;
+  z-index: 1000;               /* 前面に出すための番号 */
+}
+
+/* ヘッダー内のレイアウトを横並びにする */
+.header-container {
+  display: flex;
+  justify-content: space-between; /* 両端に分ける */
+  align-items: center;            /* 垂直方向に真ん中揃え */
+  padding: 10px 20px;
+}
+
+/* サイトタイトルの見た目 */
+.site-title {
+  color: white;
+  font-size: 28px;
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  text-shadow: none;
+
+}
+/* ナビゲーションを横並びにする */
+nav ul {
+  list-style: none;       /* 点（●）を消す */
+  display: flex;          /* 横並びにする */
+  padding: 0;
+  margin: 0;
+}
+
+/* ナビゲーションの項目を少し間隔あける */
+nav li {
+  margin-right: 20px;
+}
+
+/* ナビゲーションのリンクを装飾 */
+nav a {
+  text-decoration: none;  /* 下線を消す */
+  color: white;
+  font-weight: bold;
+}
+/*｛メインのデザイン細かく｝*/
+main {
+  padding-top: 80px; /* ヘッダーの高さに合わせて調整 */
+}
+/*｛ウェルカムメッセージについて｝*/
+.welcome {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #f9f5f6; /* やわらかい背景色 */
+}
+
+.welcome h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.welcome p {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.6;
+}
+/*｛制作物への移行エリアについて｝*/
+.section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.button {
+  display: inline-block;
+  padding: 14px 32px;
+  background: linear-gradient(135deg, #f6d365, #fda085); /* グラデーション */
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(135deg, #f6d365, #fda085); /* こちらでグラデーションを適用 */
+}
+
+/*制作物ページ*/
+/* 作品たちを包む親コンテナを新しく指定 */
+.works-container {
+  display: flex;
+  flex-wrap: wrap; /* 画面が狭いときに折り返す */
+  justify-content: center; /* 中央揃え */
+  gap: 32px; /* 作品間のスペース */
+  padding: 20px 0;
+}
+
+/* 作品1つ1つの箱 */
+.works {
+  text-align: center;
+}
+
+.thumbnail {
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+.thumbnail:hover {
+  transform: scale(1.05);
+}
+
+.works a {
+  text-decoration: none;
+  color: #333;
+  display: inline-block;
+  text-align: center;
+  margin: 16px;
+}
