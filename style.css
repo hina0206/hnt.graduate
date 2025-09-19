@@ -139,3 +139,18 @@ main {
   text-align: center;
   margin: 16px;
 }
+
+/*旅行集のページについて*/
+/* 地図全体の見た目（通常時） */
+.prefecture path,
+.prefecture polygon {
+  fill: #eeeeee;
+  transition: fill 0.2s ease;
+  cursor: pointer;
+}
+
+/* ホバーしたときに色を変える */
+.prefecture:hover path,
+.prefecture:hover polygon {
+  fill: #f28cb1;
+}
